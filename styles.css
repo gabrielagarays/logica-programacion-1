@@ -1,0 +1,123 @@
+:root {
+    --rosa: #E285B2;
+    --rojo: #DC4031;
+    --negro: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Img Fondo */
+body {
+    min-height: 100vh;
+    background-image: url("src/img/bg graficos.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* cuadro blanco con bordes redondeados */
+.card {
+    background-color: #fff;
+    width: 420px;
+    padding: 3.5rem;
+    border-radius: 60px;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+}
+
+/* Títulos "ordena los" "Mayor a Menor" "Menor a Mayor" */
+.card h1 {
+    font-weight: 900;
+    font-size: 22px;
+    color: var(--rojo);
+    margin-bottom: 0.5rem;
+}
+
+/* "NÚMEROS" Destacado */
+.destacado {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--rojo);
+    display: block;
+}
+/* Escriba 3 números */
+.card h2 {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--rosa);
+    margin-bottom: 2rem;
+}
+
+/* Inputs rosados */
+input {
+    width: 200px;
+    padding: 14px 0;
+    margin: 0 auto 14px;
+    display: block;
+
+    border: none;
+    border-radius: 999px;
+    background-color: var(--rosa);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(226, 133, 178, 0.4);
+}
+
+/* Botón negro "Ordenar" */
+button {
+    width: 200px;
+    padding: 16px 0;
+    margin: 0 auto 14px;
+    display: block;
+
+    border: none;
+    border-radius: 999px;
+    background-color: var(--negro);
+    color: #fff;
+
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover { background-color: #fff; }
+button:active { transform: scale(0.97); }
+
+
+/* Resultado */
+.resultado { margin-top: 2rem; }
+
+.bloque-resultado { margin-bottom: 1.2rem; }
+
+.bloque-resultado p {
+    background-color: var(--rosa);
+    padding: 12px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 18px;
+}
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+}
